@@ -1,0 +1,22 @@
+# Virtual Environment
+env/
+venv/
+
+# Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and temporary files
+*.log
+*.sqlite3
+db.sqlite3
+
+# System files
+.DS_Store
+
+# Environment variables
+.env
+
+# Docker data
+/postgres_data/

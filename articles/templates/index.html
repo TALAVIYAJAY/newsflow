@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Bowl News</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Background with Gradient */
+        body {
+            background: linear-gradient(to right, #ff7e00, #ffcc00); /* Vibrant Orange to Electric Yellow */
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin-top: 40px;
+        }
+
+        /* News Card Styling */
+        .news-card {
+            background-color: #121212;  /* Dark Base for Contrast */
+            border: 2px solid #00bfff;  /* Neon Blue Border */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .news-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Links */
+        .news-card a {
+            color: #ffcc00; /* Electric Yellow */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .news-card a:hover {
+            text-decoration: underline;
+            color: #ff4500; /* Vibrant Orange */
+        }
+
+        /* News Source */
+        .news-source {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(to right, #00bfff, #ff4500); /* Neon Blue to Vibrant Orange */
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">🏈 Super Bowl News</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: #ffffff;">🔥 Latest Super Bowl News</h2>
+
+        {% for article in articles %}
+        <div class="news-card">
+            <h4><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h4>
+            <p class="news-source">📢 {{ article.source }} | 🕒 {{ article.published_at|date:"F d, Y H:i A" }}</p>
+            <p>{{ article.summary }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Super Bowl News. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
