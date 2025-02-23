@@ -36,7 +36,7 @@ docker-compose up --build -d
 docker ps
 ```
 
-### **4️⃣ Access the Application**  
+### **4️⃣ Web Application URL**  
 - **Access the Application:** [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/)  
 ---
 
