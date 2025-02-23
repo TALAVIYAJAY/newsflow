@@ -37,7 +37,7 @@ docker ps
 ```
 
 ### **4️⃣ Access the Application**  
-- **Backend API:** [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/)  
+- **Access the Application:** [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/)  
 ---
 
 ## **Stopping & Restarting**  
