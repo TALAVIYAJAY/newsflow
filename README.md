@@ -74,6 +74,6 @@ docker-compose up -d
 ---
 
 ## **Video Explanation**  
-A detailed walkthrough of the project can be found here: [Video Link](https://drive.google.com/drive/folders/1SttEyAltCFNUqH5EWBviiDyY7LU0_nhm?usp=sharing)
+A detailed walkthrough of the project can be found here: [Video Link](https://www.loom.com/share/330a39e4530c42ee955f22853298e970)
 
 
